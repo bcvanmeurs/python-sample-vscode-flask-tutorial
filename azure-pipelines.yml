@@ -7,6 +7,9 @@ trigger:
 - master
 - experiment
 
+pool:
+  vmImage: 'ubuntu-16.04'
+
 stages:
 - stage: A
   jobs:
