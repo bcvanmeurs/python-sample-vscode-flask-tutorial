@@ -7,7 +7,10 @@ trigger:
 - master
 - experiment
 
-pool:
-  vmImage: 'ubuntu-16.04'
-steps:
-- bash: echo "Hello world"
+jobs:
+- job: myJob
+  timeoutInMinutes: 10
+  pool:
+    vmImage: 'ubuntu-16.04'
+  steps:
+  - bash: echo "Hello world"
