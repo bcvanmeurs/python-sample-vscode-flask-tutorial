@@ -23,8 +23,8 @@ stages:
 - stage: B
   jobs:
   - job: B1
-  steps:
+    steps:
     - bash: echo "A2"
   - job: B2
-  steps:
+    steps:
     - bash: echo "A2"
